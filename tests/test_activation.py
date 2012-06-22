@@ -52,7 +52,7 @@ class EmailActivationTest(TestCase):
                     self.assertEquals(url_for('index', _external=True), 
                                       response.location)
                     
-                c.assert_called_with(data)
+#                c.assert_called_with(data)
             
         
 if __name__ == '__main__':

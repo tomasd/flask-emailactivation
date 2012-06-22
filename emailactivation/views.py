@@ -69,7 +69,7 @@ def send_activation_email(flaskmail,
     Message(**email_context).send(flaskmail)
     
     
-@app.route('/activation/<signature>/', endpoint="activation")
+@app.route('/<signature>/', endpoint="activation")
 def _activation(signature):
     try:
         callback_str, data = signature_deserialize(signature)
