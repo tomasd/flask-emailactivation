@@ -10,5 +10,5 @@ setup(
     py_modules= ['emailactivation',],
     install_requires=['itsdangerous', 'simplejson', 'Flask-Mail'],
     tests_require=tests_require,
-    extras_require={'test', tests_require}
+    extras_require={'test': tests_require}
 )
